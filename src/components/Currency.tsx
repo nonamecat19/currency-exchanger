@@ -1,11 +1,9 @@
 import {ChangeEvent, Dispatch, FC, SetStateAction, useState} from "react"
 import {ExchangeData} from "../types/exchangeData"
 import {selectType} from "../types/currency"
-
 interface Props {
     data: ExchangeData | undefined
 }
-
 const Currency: FC<Props> = ({data}) => {
 
     const [firstCurrencyIndex, setFirstCurrencyIndex] = useState<number>(0)

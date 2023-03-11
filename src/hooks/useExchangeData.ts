@@ -1,8 +1,7 @@
-import {ExchangeData, ExchangeDataElement} from "../types/exchangeData";
-import {useEffect, useState} from "react";
-
+import {ExchangeData, ExchangeDataElement} from "../types/exchangeData"
+import {useEffect, useState} from "react"
 const useExchangeData = () => {
-    const [data, setData] = useState<ExchangeData | undefined>(undefined);
+    const [data, setData] = useState<ExchangeData | undefined>(undefined)
 
     useEffect(() => {
         fetch('https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json')

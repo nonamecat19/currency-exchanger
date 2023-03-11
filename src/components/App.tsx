@@ -1,8 +1,7 @@
 import {FC} from 'react'
 import Header from "./Header"
-import Currency from "./Currency";
-import useExchangeData from "../hooks/useExchangeData";
-
+import Currency from "./Currency"
+import useExchangeData from "../hooks/useExchangeData"
 const App: FC = () => {
     const data = useExchangeData()
 
