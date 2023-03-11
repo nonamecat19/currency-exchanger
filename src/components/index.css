@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::selection{
+    @apply text-secondary bg-main
+}
+
+option:not(:checked) {
+    @apply text-main bg-secondary
+}
+
+.Header ::selection {
+    @apply text-main bg-secondary
+}
+
